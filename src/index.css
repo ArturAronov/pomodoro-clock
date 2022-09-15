@@ -1,13 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: rgb(24, 24, 24, 25);
+  user-select: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  width: 40px;
+  height: 25px;
+  font-size: 1em;
+  background-color: rgb(24, 24, 25);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  outline: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  /* These 4 border style settings will remove border settings for Chrome  */
+}
+
+.inputFieldActive {
+  border: solid 1px rgb(199, 111, 66);
+}
+
+.inputFieldActive:hover {
+  border: solid 1px rgb(123, 123, 148);
+}
+
+.inputFieldInactive {
+  border: solid 1px rgb(24, 24, 25);
+  color: rgb(24, 24, 25);
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#startResetContainer {
+  border: 1px solid rgb(199, 111, 66);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(to left, rgb(24, 24, 25) 50%, rgb(199, 111, 66) 50%);
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#startStop {
+  color: rgb(24, 24, 25);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  cursor: pointer;
+  letter-spacing: -4px;
+}
+
+#startStopActive {
+  color: rgb(199, 111, 66);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  cursor: pointer;
+  letter-spacing: -4px;
+}
+
+#startResetContainerActive {
+  border: 1px solid rgb(199, 111, 66);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(to right, rgb(24, 24, 25) 50%, rgb(199, 111, 66) 50%);
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#reset {
+  color: rgb(199, 111, 66);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  cursor: pointer;
+  letter-spacing: -4px;
+}
+
+#resetActive {
+  color: rgb(24, 24, 25);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  cursor: pointer;
+  letter-spacing: -4px;
+}
+
+.digits {
+  font-size: 8rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+#minutes {
+  margin-bottom: -15px;
+  color: rgb(107, 182, 250);
+}
+
+#seconds {
+  margin-top: -15px;
+  color: rgb(251, 209, 170);
+}
+
+.controlsActive {
+  color: rgb(199, 111, 66);
+  font-size: 3rem;
+  font-weight: 100;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  width: 30px;
+}
+
+.controlsInactive {
+  color: rgb(24, 24, 25);
+  font-size: 3rem;
+  text-align: center;
+  cursor: default;
+  user-select: none;
+  width: 30px;
+}
+
+.controlsActive:hover {
+  color: rgb(123, 123, 148);
+}
+
+#restContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.controlsContainer {
+  border: 1px solid rgb(199, 111, 66);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  text-align: center;
+  background: linear-gradient(to top, rgb(24, 24, 25) 75%, rgb(199, 111, 66) 25%);
+  margin: 10px;
+}
+
+.controlsHeader {
+  font-family: 'Rajdhani', sans-serif;
+  color: rgb(24, 24, 25);
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 5px;
+  cursor: default;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 55px;
+}
+
+#controlsPanel {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#states {
+  margin: -15px 0;
+  margin-top: -30px;
+  color: rgb(107, 182, 250);
+  ;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  cursor: default;
+}
+
+#round {
+  margin-top: -35px;
+  margin-bottom: 30px;
+  color: rgb(251, 209, 170);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  cursor: default;
 }
