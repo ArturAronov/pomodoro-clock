@@ -1,9 +1,12 @@
 # Pomodoro Clock
 ### Live Site
+https://pomodoro-clock-arturaronov.vercel.app/
 
 ### Stack
 - React
 - Vanilla CSS
 
 ### Preview
-<img src='./docs/preview.gif' width=300 />
+<p align="center">
+  <img src='./docs/preview.gif' width="400"/>
+</p>
